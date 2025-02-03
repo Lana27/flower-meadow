@@ -1,17 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #013220; /* Тёмно-зелёный фон */
+    color: white; /* Белый цвет текста */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота страницы */
 }
 
 header {
-    background-color: #f8f9fa;
+    background-color: rgba(248, 249, 250, 0.8); /* Полупрозрачный фон для шапки */
     padding: 20px;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
+    background-color: #006400; /* Тёмно-зелёный цвет для выделения меню */
 }
 
 nav ul li {
@@ -19,12 +26,46 @@ nav ul li {
     margin-right: 10px;
 }
 
-main {
-    padding: 20px;
+nav ul li a {
+    color: white; /* Белый цвет текста ссылок в меню */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
 }
 
+nav ul li a:hover {
+   text-decoration :underline ; 
+}
+main {
+ flex-grow :1; 
+ padding :20px ;
+}
+.image-container {
+   display :flex ;
+   flex-wrap :wrap ;
+   justify-content :space-around ;
+   margin-top :30px ;
+}
+.image-box {
+   background-color:white ;
+   color:black ;
+   width :30% ; 
+   margin-bottom :20px ;
+   box-shadow :0px 4px 8px rgba (0 ,0 ,0 ,0.2); 
+   border-radius :8px ; 
+   overflow:hidden ;
+}
+.image-box img {
+ width :100% ;
+ height:auto ;
+ display:block ;
+ border-bottom :2px solid #013220; 
+}
+.image-text {
+ padding :10px ; 
+ text-align:center ;
+ font-size :16px ; 
+}
 footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 10px;
+ background-color :rgba (248 ,249 ,250 ,0.8); 
+ text-align:center ;
+ padding :10px ;
 }
