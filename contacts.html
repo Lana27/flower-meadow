@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about_us.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-section">
+            <h2>Свяжитесь с нами</h2>
+            <p>Вы можете связаться с нами по следующим каналам:</p>
+
+            <h3>Email</h3>
+            <p>info@example.com</p>
+
+            <h3>Телефон</h3>
+            <p>+7 (123) 456-7890</p>
+
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Цветочная, д. 10</p>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Контакты - Мой сайт о цветах</p>
+    </footer>
+
+</body>
+</html>

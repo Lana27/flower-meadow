@@ -1,71 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #013220; /* Тёмно-зелёный фон */
-    color: white; /* Белый цвет текста */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Минимальная высота страницы */
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   background-color: #013220;
+   color: white;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
 }
 
 header {
-    background-color: rgba(248, 249, 250, 0.8); /* Полупрозрачный фон для шапки */
-    padding: 20px;
-    text-align: center;
+   background-image: url('./98134d3f8b659c1e8dd46b8921060cb8.jpg');
+   background-size: cover;
+   background-position: center;
+   padding: 60px 20px;
+   text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 10px;
-    background-color: #006400; /* Тёмно-зелёный цвет для выделения меню */
+  list-style-type: none;
+  padding: 10px;
+  background-color: #006400; 
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+  margin-right: 15px;
 }
 
 nav ul li a {
-    color: white; /* Белый цвет текста ссылок в меню */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
+  color: white; 
+  text-decoration: none; 
 }
 
 nav ul li a:hover {
-   text-decoration :underline ; 
+  text-decoration: underline; 
 }
+
 main {
- flex-grow :1; 
- padding :20px ;
+  flex-grow: 1; 
+  padding: 20px;
 }
+
 .image-container {
-   display :flex ;
-   flex-wrap :wrap ;
-   justify-content :space-around ;
-   margin-top :30px ;
+  column-count: 3; /* Количество колонок */
+  column-gap: 20px; /* Расстояние между колонками */
 }
+
 .image-box {
-   background-color:white ;
-   color:black ;
-   width :30% ; 
-   margin-bottom :20px ;
-   box-shadow :0px 4px 8px rgba (0 ,0 ,0 ,0.2); 
-   border-radius :8px ; 
-   overflow:hidden ;
+  background-color:white ;
+  color:black ;
+  border-radius :8px ; 
+  overflow:hidden ;
+  box-shadow :0px 4px 8px rgba (0 ,0 ,0 ,0.2); 
+  margin-bottom :20px ;
+  break-inside :avoid ;
 }
+
 .image-box img {
- width :100% ;
- height:auto ;
- display:block ;
- border-bottom :2px solid #013220; 
+width :100% ;
+height:auto ;
+display:block ;
 }
+
 .image-text {
- padding :10px ; 
- text-align:center ;
- font-size :16px ; 
+padding :10px ; 
+text-align:center ;
+font-size :16px ; 
 }
+
 footer {
- background-color :rgba (248 ,249 ,250 ,0.8); 
- text-align:center ;
- padding :10px ;
+background-color :rgba (248 ,249 ,250 ,0.8); 
+text-align:center ;
+padding :10px ;
 }
